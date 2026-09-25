@@ -1,21 +1,9 @@
-# Dependências de todas as pastas
 node_modules/
-**/node_modules/
-
-# Builds e caches
 .expo/
-.expo-shared/
 dist/
-build/
-*.log
-
-# Banco de dados local e arquivos de ambiente (Credenciais)
+web-build/
 *.db
 *.db-journal
-*.sqlite
+/overhaul-doc-server/prisma/*.db
 .env
-.env.*
-
-# Sistema Operacional e IDEs
-.DS_Store
-Thumbs.db
+*.log
