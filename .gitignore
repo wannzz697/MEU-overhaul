@@ -1,0 +1,21 @@
+# Dependências de todas as pastas
+node_modules/
+**/node_modules/
+
+# Builds e caches
+.expo/
+.expo-shared/
+dist/
+build/
+*.log
+
+# Banco de dados local e arquivos de ambiente (Credenciais)
+*.db
+*.db-journal
+*.sqlite
+.env
+.env.*
+
+# Sistema Operacional e IDEs
+.DS_Store
+Thumbs.db

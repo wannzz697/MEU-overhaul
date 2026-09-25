@@ -1,0 +1,14 @@
+{
+  "name": "overhaul-doc-completo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Comandos únicos para rodar o backend (overhaul-doc-server) e o app (overhaul-doc) juntos",
+  "scripts": {
+    "install:all": "npm install --prefix overhaul-doc-server && npm install --prefix overhaul-doc",
+    "db:setup": "npm run --prefix overhaul-doc-server prisma:generate && npm run --prefix overhaul-doc-server prisma:push && npm run --prefix overhaul-doc-server seed",
+    "dev": "concurrently -n BACKEND,FRONTEND -c blue,green \"npm run dev --prefix overhaul-doc-server\" \"npm run web --prefix overhaul-doc\""
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
